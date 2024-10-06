@@ -2,6 +2,16 @@ const axios = require('axios');
 
 const waterStations = [
   {
+    "id" : 49,
+    "name": "CPY012 บางปะอิน",
+    "location": "ต.ขนอนหลวง อ.บางปะอิน จ.พระนครศรีอยุธยา"
+  },
+  {
+    "id" : 504974,
+    "name": "C.29A ศูนย์ศิลปาชีพบางไทร",
+    "location": "ต.ช้างใหญ่ อ.บางไทร จ.พระนครศรีอยุธยา"
+  },
+  {
     "id" : 46,
     "name": "CPY013 บางไทร",
     "location": "ต.โพแตง อ.บางไทร จ.พระนครศรีอยุธยา"
@@ -13,7 +23,7 @@ const waterStations = [
   }
 ]
 
-waterStations.forEach(waterStations => {
+waterStations.forEach((waterStations) => {
   getData(waterStations);
 })
 
